@@ -1,4 +1,6 @@
 🚀 GitGrade AI
+
+
 AI-Powered GitHub Repository Evaluation Platform
 GitGrade AI analyzes GitHub repositories using static analysis + AI reasoning (Gemini) to generate a quality score, summary, and improvement roadmap.
 
@@ -187,7 +189,6 @@ AI output depends on prompt quality
 ✔ Production-ready
 
 👨‍💻 Author
-
-Shubham Agarwal
+Aman Agarwal
 B.Tech CSE (AI/ML) – VIT Bhopal
 Cybersecurity | AI | Full Stack
