@@ -1,32 +1,43 @@
-🚀 GitGrade AI
+# 🚀 GitGrade AI  
+### AI-Powered GitHub Repository Evaluation Platform
 
+GitGrade AI analyzes GitHub repositories using **static analysis + AI reasoning (Gemini)** to generate a **quality score, summary, and improvement roadmap**.
 
-AI-Powered GitHub Repository Evaluation Platform
-GitGrade AI analyzes GitHub repositories using static analysis + AI reasoning (Gemini) to generate a quality score, summary, and improvement roadmap.
+---
 
-✨ Features
+## ✨ Features
 
-🔍 Static code & structure analysis
+- 🔍 Static code & structure analysis  
+- 🧠 AI semantic reasoning using **Gemini**  
+- 📊 Repository score out of **100**  
+- 🛣️ Actionable improvement roadmap  
+- ⚡ FastAPI backend + modern frontend  
 
-🧠 AI semantic reasoning using Gemini
+---
 
-📊 Score out of 100
+## 🧠 How It Works
 
-🛣️ Actionable improvement roadmap
-
-⚡ FastAPI backend + modern frontend
-
-🧠 How It Works
+```mermaid
 flowchart LR
-    A[User enters Repo URL] --> B[FastAPI Backend]
-    B --> C[GitHub API]
-    B --> D[Repo Cloner]
-    D --> E[Static Analysis]
-    E --> F[Gemini AI Analysis]
-    F --> G[Scoring Engine]
-    G --> H[JSON Response]
+    A[User enters Repo URL]
+    B[FastAPI Backend]
+    C[GitHub API]
+    D[Repo Cloner]
+    E[Static Analysis]
+    F[Gemini AI Analysis]
+    G[Scoring Engine]
+    H[JSON Response]
 
+    A --> B
+    B --> C
+    B --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
 🏗️ System Architecture
+mermaid
+Copy code
 graph TD
     UI[Frontend UI]
     API[FastAPI Backend]
@@ -39,43 +50,36 @@ graph TD
     API --> FS
     FS --> AI
     AI --> API
-
 📊 Evaluation Metrics
 Metric	Description
 ⭐ Stars	Repository popularity
-🍴 Forks	Community usage
+🍴 Forks	Community adoption
 🧮 Complexity	Cyclomatic complexity
 🗂 Structure	Folder & file organization
 🧾 Commits	Commit discipline
 🧠 AI Score	Semantic quality
-📈 Score Composition (Example)
+
+📈 Score Breakdown (Example)
+mermaid
+Copy code
 pie
-    title GitGrade Score Breakdown
+    title GitGrade Score Composition
     "AI Semantic Quality" : 30
     "Code Structure" : 25
     "Complexity" : 20
     "Commit Discipline" : 15
     "Documentation" : 10
-
-📉 Sample Quality Radar
-radar
-    title Repository Quality Radar
-    metrics
-        Structure: 80
-        Complexity: 70
-        Documentation: 65
-        Commits: 75
-        AI Quality: 85
-
 🖥️ Frontend Preview
+Add real screenshots inside the assets/ folder
 
-📌 Add screenshots in assets/ folder
-
+md
+Copy code
 ![Dashboard](assets/dashboard.png)
 ![Score View](assets/score.png)
 ![Roadmap](assets/roadmap.png)
-
 🧪 Example API Response
+json
+Copy code
 {
   "repository": "GitGrade-RealWorld",
   "score": 82,
@@ -91,10 +95,8 @@ radar
     "suggestion": "Increase commit frequency"
   }
 }
-
 ⚙️ Tech Stack
-🧠 Backend
-
+Backend
 Python
 
 FastAPI
@@ -105,8 +107,7 @@ Requests
 
 Gemini AI
 
-🎨 Frontend
-
+Frontend
 React / Next.js
 
 Tailwind CSS
@@ -114,37 +115,42 @@ Tailwind CSS
 Chart.js / Recharts
 
 🛠️ Installation & Setup
-1️⃣ Clone Repo
+1️⃣ Clone Repository
+bash
+Copy code
 git clone https://github.com/<your-username>/GitGrade-AI.git
 cd GitGrade-AI
-
 2️⃣ Backend Setup
+bash
+Copy code
 cd backend
 pip install -r requirements.txt
+Create .env (do NOT commit):
 
-
-Create .env:
-
+env
+Copy code
 GEMINI_API_KEY=your_api_key_here
+Run backend:
 
-
-Run server:
-
+bash
+Copy code
 python -m uvicorn app.main:app --reload
-
 3️⃣ Frontend Setup
+bash
+Copy code
 cd frontend
 npm install
 npm run dev
-
 🔒 Environment Variables
 Variable	Purpose
 GEMINI_API_KEY	Gemini AI API key
 GITHUB_API_BASE	GitHub REST API
 
-👉 .env is NOT pushed to GitHub
+.env is intentionally ignored via .gitignore
 
 📁 Project Structure
+bash
+Copy code
 GitGrade-AI/
 ├── backend/
 │   ├── app/
@@ -155,40 +161,64 @@ GitGrade-AI/
 │   └── requirements.txt
 ├── frontend/
 ├── assets/
-│   ├── banner.png
-│   ├── dashboard.png
-│   └── roadmap.png
 ├── .gitignore
 └── README.md
-
 🚨 Limitations
-
 GitHub API rate limits
 
-Very large repos may fail shallow clone
+Large repositories may fail shallow cloning
 
 AI output depends on prompt quality
 
 🌱 Future Improvements
+GitHub OAuth login
 
-🔐 GitHub OAuth login
+Test coverage analysis
 
-🧪 Test coverage analysis
+Historical repo comparison
 
-📊 Historical repo comparison
+Multi-language support
 
-🌍 Multi-language support
-
-🤖 Fine-tuned AI model
+Fine-tuned AI model
 
 🏆 Hackathon Value
-
 ✔ Real-world problem
 ✔ AI + System Design
 ✔ Scalable backend
 ✔ Production-ready
 
 👨‍💻 Author
-Aman Agarwal
+Shubham Agarwal
 B.Tech CSE (AI/ML) – VIT Bhopal
 Cybersecurity | AI | Full Stack
+
+⭐ If you like this project, please give it a star!
+
+yaml
+Copy code
+
+---
+
+## ✅ Final checklist for graphs to appear
+
+- [ ] README uses ```mermaid blocks
+- [ ] No radar charts
+- [ ] Images exist in `assets/`
+- [ ] Repo is public
+- [ ] Markdown copied exactly
+
+---
+
+If you want, next I can:
+- Convert radar → image
+- Create **frontend charts**
+- Generate **hackathon PPT**
+- Optimize **Gemini prompt**
+
+Just tell me 🚀
+
+
+
+
+
+
