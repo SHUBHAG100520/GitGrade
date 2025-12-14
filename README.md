@@ -15,41 +15,6 @@ GitGrade AI analyzes GitHub repositories using **static analysis + AI reasoning 
 
 ---
 
-## 🧠 How It Works
-
-```mermaid
-flowchart LR
-    A[User enters Repo URL]
-    B[FastAPI Backend]
-    C[GitHub API]
-    D[Repo Cloner]
-    E[Static Analysis]
-    F[Gemini AI Analysis]
-    G[Scoring Engine]
-    H[JSON Response]
-
-    A --> B
-    B --> C
-    B --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-🏗️ System Architecture
-mermaid
-Copy code
-graph TD
-    UI[Frontend UI]
-    API[FastAPI Backend]
-    GH[GitHub API]
-    AI[Gemini AI]
-    FS[Repo Analyzer]
-
-    UI --> API
-    API --> GH
-    API --> FS
-    FS --> AI
-    AI --> API
 📊 Evaluation Metrics
 Metric	Description
 ⭐ Stars	Repository popularity
@@ -188,7 +153,7 @@ Fine-tuned AI model
 ✔ Production-ready
 
 👨‍💻 Author
-Shubham Agarwal
+Aman  Agarwal
 B.Tech CSE (AI/ML) – VIT Bhopal
 Cybersecurity | AI | Full Stack
 
